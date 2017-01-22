@@ -1,0 +1,20 @@
+#!/usr/bin/make -f
+#export DH_VERBOSE=1
+
+# Define install directory
+INSTALLDIR = $(CURDIR)/debian/tmp
+
+%:
+	dh $@ --parallel
+
+override_dh_auto_install:
+	# update icon
+	$(MAKE) install DESTDIR=$(INSTALLDIR) prefix=/usr
+	# Apt config
+	install -m0755 -d $(INSTALLDIR)/etc/apt/apt.conf.d/
+	install -m0644 $(CURDIR)/debian/apt/10periodic $(INSTALLDIR)/etc/apt/apt.conf.d/
+	install -m0644 $(CURDIR)/debian/apt/15update-stamp $(INSTALLDIR)/etc/apt/apt.conf.d/
+	install -m0644 $(CURDIR)/debian/apt/20archive $(INSTALLDIR)/etc/apt/apt.conf.d/
+
+override_dh_install:
+	dh_install --list-missing

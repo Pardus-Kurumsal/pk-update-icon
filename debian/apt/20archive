@@ -1,0 +1,3 @@
+APT::Periodic::MaxAge "30";
+APT::Periodic::MinAge "2";
+APT::Periodic::MaxSize "500";

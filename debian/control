@@ -1,0 +1,44 @@
+Source: pk-update-icon
+Section: utils
+Priority: optional
+Maintainer: Matthias Klumpp <mak@debian.org>
+Vcs-Git: https://anonscm.debian.org/git/pkg-packagekit/pk-update-icon.git
+Vcs-Browser: https://anonscm.debian.org/git/pkg-packagekit/pk-update-icon.git
+Build-Depends: debhelper (>= 10),
+               docbook-xsl-ns,
+               gnome-packagekit,
+               intltool,
+               libglib2.0-dev (>= 2.36),
+               libgtk2.0-dev (>= 2.24),
+               libnotify-dev (>= 0.7.6),
+               libpackagekit-glib2-dev (>= 0.8.16),
+               libunique-dev,
+               xsltproc
+Standards-Version: 3.9.8
+Homepage: https://code.guido-berhoerster.org/projects/pk-update-icon/
+
+Package: pk-update-icon
+Architecture: any
+Depends: gnome-packagekit,
+         ${misc:Depends},
+         ${shlibs:Depends}
+Recommends: apt-config-auto-update
+Description: Displays an update-notification tray icon
+ This small tool displays notifications and an icon in the tray area of
+ the panel when package updates are available.
+ It is primarily designed for desktops which do not already have this
+ functionality integrated, such as Xfce.
+ .
+ Information about updates is queried using the PackageKit service.
+
+Package: apt-config-auto-update
+Architecture: all
+Depends: ${misc:Depends},
+         ${shlibs:Depends}
+Replaces: update-notifier-common (<= 0.99.3debian11~)
+Breaks: update-notifier-common (<= 0.99.3debian11~)
+Description: Apt configuration for automatic cache updates
+ This package contains configuration snippets for the Apt
+ package manager to have it automatically update its package cache.
+ This is especially useful for GUI tools like update-notifiers, which
+ do not trigger cache updates on their own.
