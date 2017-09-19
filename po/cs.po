@@ -1,0 +1,144 @@
+# pk-update-icon
+# Copyright (C) 2011 Pavol Rusnak, Guido Berhoerster
+# This file is distributed under the same license as the pk-update-icon package.
+# Pavol Rusnak <stick@gk2.sk>, 2011.
+# Stanislav Brabec <sbrabec@suse.com>, 2015.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: pk-update-icon 0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-06-18 22:56:02+0200\n"
+"PO-Revision-Date: 2015-06-18 16:36+0200\n"
+"Last-Translator: Stanislav Brabec <sbrabec@suse.com>\n"
+"Language-Team: Czech\n"
+"Language: cs\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+
+#: ../main.c:42
+msgid "Command for starting the software update viewer"
+msgstr "Příkaz spouštějící prohlížeč aktualizací softwaru"
+
+#: ../main.c:45
+msgid "Set the delay in seconds before the first check for updates"
+msgstr "Nastaví prodlevu před první kontrolou aktualizací v sekundách"
+
+#: ../main.c:48
+msgid "Set the interval in seconds between checks for updates"
+msgstr "Nastaví interval mezi kontrolami aktualizací v sekundách"
+
+#: ../main.c:51
+msgid "Print the version number and exit"
+msgstr "Vypíše verzi a skončí"
+
+#: ../main.c:63
+msgid "- display notifications about software updates"
+msgstr "- zobrazení oznámení o aktualizacích softwaru"
+
+#: ../pkui-icon.c:94
+msgid "Software Updates"
+msgstr "Aktualizace softwaru"
+
+#: ../pkui-icon.c:168
+msgid "translators"
+msgstr ""
+"Pavol Rusnak <stick@gk2.sk>\n"
+"Stanislav Brabec <sbrabec@suse.com>"
+
+#: ../pkui-icon.c:196
+msgid "_Check for Updates"
+msgstr "_Zkontrolovat aktualizace"
+
+#: ../pkui-icon.c:204
+msgid "_About"
+msgstr "_O programu"
+
+#. TRANSLATORS: This is a message without number mentioned
+#: ../pkui-icon.c:247
+msgid "Important Software Update"
+msgid_plural "Important Software Updates"
+msgstr[0] "Důležitá aktualizace softwaru"
+msgstr[1] "Důležité aktualizace softwaru"
+msgstr[2] "Důležité aktualizace softwaru"
+
+#. TRANSLATORS: This is a message without number mentioned
+#: ../pkui-icon.c:250
+msgid "Software Update"
+msgid_plural "Software Updates"
+msgstr[0] "Aktualizace softwaru"
+msgstr[1] "Aktualizace softwaru"
+msgstr[2] "Aktualizace softwaru"
+
+#.
+#. * TRANSLATORS: This sentence contains two plurals.
+#. * Texts related to these plurals are mixed. That is
+#. * why it is split in three parts. Fill first two parts
+#. * as you need, and use them as %s in the last one to
+#. * construct a sentence. Note that if the first form of
+#. * plural relates only to singular form, it is never
+#. * used, and dedicated shorter sentences are used.
+#: ../pkui-icon.c:266
+#, c-format
+msgid "There is %d software update available,"
+msgid_plural "There are %d software updates available,"
+msgstr[0] "Je k dispozici %d aktualizace softwaru, z níž"
+msgstr[1] "Jsou k dispozici %d aktualizace softwaru, z nichž"
+msgstr[2] "Je k dispozici %d aktualizací softwaru, z nichž"
+
+#.
+#. * TRANSLATORS: This is the sentence part in the
+#. * middle, form of which is related to the first
+#. * number. If your language does not need it, simply
+#. * use it as space or so.
+#: ../pkui-icon.c:275
+msgid "of it"
+msgid_plural "of them"
+msgstr[0] "."
+msgstr[1] "."
+msgstr[2] "."
+
+#.
+#. * TRANSLATORS: This forms the sentence. If you need to
+#. * swap parts, use %3$s and %1$s etc. Plurals are
+#. * related to second number.
+#: ../pkui-icon.c:282
+#, c-format
+msgid "%s %d %s is important."
+msgid_plural "%s %d %s are important."
+msgstr[0] "%s %d je důležitá%s"
+msgstr[1] "%s %d jsou důležité%s"
+msgstr[2] "%s %d je důležitých%s"
+
+#: ../pkui-icon.c:287
+#, c-format
+msgid "There is %d important software update available."
+msgid_plural "There are %d important software updates available."
+msgstr[0] "Je k dispozici %d důležitá aktualizace softwaru."
+msgstr[1] "Jsou k dispozici %d důležité aktualizace softwaru."
+msgstr[2] "Je k dispozici %d důležitých aktualizací softwaru."
+
+#: ../pkui-icon.c:294
+#, c-format
+msgid "There is %d software update available."
+msgid_plural "There are %d software updates available."
+msgstr[0] "Je k dispozici %d aktualizace softwaru."
+msgstr[1] "Jsou k dispozici %d aktualizace softwaru."
+msgstr[2] "Je k dispozici %d aktualizací softwaru."
+
+#: ../pkui-icon.c:313
+msgid "Install Update"
+msgid_plural "Install Updates"
+msgstr[0] "Instalovat aktualizaci"
+msgstr[1] "Instalovat aktualizace"
+msgstr[2] "Instalovat aktualizace"
+
+#: ../pk-update-icon.desktop.in.h:1
+msgid "PackageKit Update Applet"
+msgstr "Aktualizační aplet PackageKit"
+
+#: ../pk-update-icon.desktop.in.h:2
+msgid "Update Applet"
+msgstr "Aktualizační aplet"

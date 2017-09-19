@@ -1,0 +1,142 @@
+# pk-update-icon
+# Copyright (C) 2011 Vincent Untz
+# This file is distributed under the same license as the pk-update-icon package.
+# Vincent Untz <vuntz@opensuse.org>, 2011.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: pk-update-icon 0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-06-18 22:51:12+0200\n"
+"PO-Revision-Date: 2001-10-20 15:40+0200\n"
+"Last-Translator: Vincent Untz <vuntz@opensuse.org>\n"
+"Language-Team: French\n"
+"Language: french\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n>1;\n"
+
+#: ../main.c:42
+msgid "Command for starting the software update viewer"
+msgstr ""
+
+#: ../main.c:45
+msgid "Set the delay in seconds before the first check for updates"
+msgstr ""
+"Configure le délai en secondes avant la première vérification des mises à "
+"jour"
+
+#: ../main.c:48
+msgid "Set the interval in seconds between checks for updates"
+msgstr ""
+"Configure l'intervalle en seconde entre les vérifications des mises à jour"
+
+#: ../main.c:51
+msgid "Print the version number and exit"
+msgstr "Affiche le numéro de version et quitte"
+
+#: ../main.c:63
+msgid "- display notifications about software updates"
+msgstr "- affiche les notifications à propos des mises à jour des logiciels"
+
+#: ../pkui-icon.c:94
+msgid "Software Updates"
+msgstr "Mise à jour des logiciels"
+
+#: ../pkui-icon.c:168
+msgid "translators"
+msgstr "traducteurs"
+
+#: ../pkui-icon.c:196
+msgid "_Check for Updates"
+msgstr "_Vérifier les mises à jour"
+
+#: ../pkui-icon.c:204
+msgid "_About"
+msgstr "À _propos"
+
+#. TRANSLATORS: This is a message without number mentioned
+#: ../pkui-icon.c:247
+msgid "Important Software Update"
+msgid_plural "Important Software Updates"
+msgstr[0] "Mise à jour importante d'un logiciel"
+msgstr[1] "Mises à jour importantes de logiciels"
+
+#. TRANSLATORS: This is a message without number mentioned
+#: ../pkui-icon.c:250
+msgid "Software Update"
+msgid_plural "Software Updates"
+msgstr[0] "Mise à jour d'un logiciel"
+msgstr[1] "Mises à jour de logiciels"
+
+#.
+#. * TRANSLATORS: This sentence contains two plurals.
+#. * Texts related to these plurals are mixed. That is
+#. * why it is split in three parts. Fill first two parts
+#. * as you need, and use them as %s in the last one to
+#. * construct a sentence. Note that if the first form of
+#. * plural relates only to singular form, it is never
+#. * used, and dedicated shorter sentences are used.
+#: ../pkui-icon.c:266
+#, fuzzy, c-format
+msgid "There is %d software update available,"
+msgid_plural "There are %d software updates available,"
+msgstr[0] "Il y a une mise à jour disponible."
+msgstr[1] "Il y a %d mises à jour disponibles."
+
+#.
+#. * TRANSLATORS: This is the sentence part in the
+#. * middle, form of which is related to the first
+#. * number. If your language does not need it, simply
+#. * use it as space or so.
+#: ../pkui-icon.c:275
+msgid "of it"
+msgid_plural "of them"
+msgstr[0] ""
+msgstr[1] ""
+
+#.
+#. * TRANSLATORS: This forms the sentence. If you need to
+#. * swap parts, use %3$s and %1$s etc. Plurals are
+#. * related to second number.
+#: ../pkui-icon.c:282
+#, c-format
+msgid "%s %d %s is important."
+msgid_plural "%s %d %s are important."
+msgstr[0] ""
+msgstr[1] ""
+
+#: ../pkui-icon.c:287
+#, fuzzy, c-format
+msgid "There is %d important software update available."
+msgid_plural "There are %d important software updates available."
+msgstr[0] "Il y a une mise à jour importante disponible."
+msgstr[1] "Il y a %d mises à jour importantes disponibles."
+
+#: ../pkui-icon.c:294
+#, fuzzy, c-format
+msgid "There is %d software update available."
+msgid_plural "There are %d software updates available."
+msgstr[0] "Il y a une mise à jour disponible."
+msgstr[1] "Il y a %d mises à jour disponibles."
+
+#: ../pkui-icon.c:313
+msgid "Install Update"
+msgid_plural "Install Updates"
+msgstr[0] "Installer la mise à jour"
+msgstr[1] "Installer les mises à jour"
+
+#: ../pk-update-icon.desktop.in.h:1
+msgid "PackageKit Update Applet"
+msgstr "Applet de mise à jour PackageKit"
+
+#: ../pk-update-icon.desktop.in.h:2
+msgid "Update Applet"
+msgstr "Applet de mise à jour"
+
+#~ msgid "There are %d software updates available, %d of them is important."
+#~ msgid_plural ""
+#~ "There are %d software updates available, %d of them are important."
+#~ msgstr[0] "Il y a %d mise à jour disponible, dont %d importante."
+#~ msgstr[1] "Il y a %d mises à jour disponibles, dont %d importantes."

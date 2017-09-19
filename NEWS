@@ -1,0 +1,64 @@
+News
+====
+
+pk-update-icon 2 (2015-06-19T13:08:33+02:00)
+--------------------------------------------
+
+- Update German and Indonesian translations
+- Update and improve Czech translation
+- Avoid passing more arguments to g_strdup_printf() than specified in the format
+- Document configuration default values
+- Make the update viewer command configurable
+- Prevent calling g_source_remove() on an invalid source ID
+- Improve README file
+- Add NEWS file
+
+pk-update-icon 1 (2014-02-07T22:05:17+01:00)
+--------------------------------------------
+
+- Add missing function prototypes
+- Stylistic fixes
+- Add README file with build instructions and author information
+- Convert the manpage to DocBook V5.0
+- Use pax to generate tarballs
+- Fix automatic dependency generation and improve portability
+
+pk-update-icon 0.2.2 (2012-07-18T11:54:03+02:00)
+------------------------------------------------
+
+- increase the default update interval and delay before checking for updates
+
+pk-update-icon 0.2.1 (2011-11-15T13:03:17+01:00)
+------------------------------------------------
+
+- hide the autostart file in KDE and GNOME rather than explicitly showing it in Xfce and LXDE only
+- increase default startup-delay to 5 min (bnc#729230)
+- fix some typos
+- use the VERSION macro in the about dialog
+
+pk-update-icon 0.2 (2011-10-22T10:20:02+02:00)
+----------------------------------------------
+
+- add dist target to Makefile
+- add french translation
+- added slovak and czech translations
+- added a button for installing updates to the notification
+- add an about dialog
+- added Indonesian translations
+- add CLI, make delay and interval configurable
+- add clobber target
+- GObject-based rewrite
+- fix the locale path
+- add license header to main.h
+- add compatibility with libnotify version < 0.7
+- add a man page
+- use libunique to ensure that only a single instance of pk-update-icon can be run
+- add internationalization support
+- allow overriding CFLAGS
+- fix desktop file and arguments order in Makefile
+- use libnotify's pkgconfig for buildflags
+- use GTK2 as Xfce/LXDE are not yet using GTK3
+- code rework, show notify window just once
+- added GPLv2 headers
+- change icon and tooltip of the tray icon
+- initial commit

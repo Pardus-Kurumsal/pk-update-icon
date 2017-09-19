@@ -1,0 +1,197 @@
+<?xml version="1.0"?>
+<!--
+
+Copyright (C) 2014 Guido Berhoerster <gber@opensuse.org>
+
+Licensed under the GNU General Public License Version 2
+
+This program is free software; you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation; either version 2 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program; if not, write to the Free Software
+Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+
+-->
+<refentry xmlns="http://docbook.org/ns/docbook" xml:lang="en">
+  <info>
+    <author>
+      <personname>
+        <firstname>Guido</firstname>
+        <surname>Berhoerster</surname>
+      </personname>
+      <email>gber@opensuse.org</email>
+      <personblurb/>
+    </author>
+    <date>18 Juni, 2015</date>
+  </info>
+  <refmeta>
+    <refentrytitle>pk-update-icon</refentrytitle>
+    <manvolnum>1</manvolnum>
+    <refmiscinfo class="source"/>
+    <refmiscinfo class="version"/>
+    <refmiscinfo class="manual">User Commands</refmiscinfo>
+  </refmeta>
+  <refnamediv>
+    <refname>pk-update-icon</refname>
+    <refpurpose>display notifications about software updates</refpurpose>
+  </refnamediv>
+  <refsynopsisdiv>
+    <cmdsynopsis>
+      <command>pk-update-icon</command>
+      <group>
+        <arg choice="plain">
+          <option>-h</option>
+        </arg>
+        <arg choice="plain">
+          <option>-?</option>
+        </arg>
+        <arg choice="plain">
+          <option>--help</option>
+        </arg>
+      </group>
+      <group>
+        <arg choice="plain">
+          <option>-v</option>
+        </arg>
+        <arg choice="plain">
+          <option>--version</option>
+        </arg>
+      </group>
+      <group>
+        <arg choice="plain">
+          <option>-c</option>
+          <replaceable>command</replaceable>
+        </arg>
+        <arg choice="plain">
+          <option>--command</option>
+          <replaceable>command</replaceable>
+        </arg>
+      </group>
+      <group>
+        <arg choice="plain">
+          <option>-d</option>
+          <replaceable>delay</replaceable>
+        </arg>
+        <arg choice="plain">
+          <option>--delay</option>
+          <replaceable>delay</replaceable>
+        </arg>
+      </group>
+      <group >
+        <arg choice="plain">
+          <option>-i</option>
+          <replaceable>interval</replaceable>
+        </arg>
+        <arg choice="plain">
+          <option>--interval</option>
+          <replaceable>interval</replaceable>
+        </arg>
+      </group>
+    </cmdsynopsis>
+  </refsynopsisdiv>
+  <refsect1>
+    <title>Description</title>
+    <para><command>pk-update-icon</command> displays  notifications  and an
+    icon in the tray area of the panel when package updates are
+    available.</para>
+  </refsect1>
+  <refsect1>
+    <title>Options</title>
+    <para>The following options are supported:</para>
+    <variablelist>
+      <varlistentry>
+        <term>
+          <option>-c</option>
+          <replaceable>command</replaceable>
+        </term>
+        <term>
+          <option>--command</option>
+          <replaceable>command</replaceable>
+        </term>
+        <listitem>
+          <para>Specify the command for starting the software update
+          viewer.</para>
+        </listitem>
+      </varlistentry>
+      <varlistentry>
+        <term>
+          <option>-d</option>
+          <replaceable>delay</replaceable>
+        </term>
+        <term>
+          <option>--delay</option>
+          <replaceable>delay</replaceable>
+        </term>
+        <listitem>
+          <para>Set the delay in seconds before the first check for
+          updates. The default is five minutes.</para>
+        </listitem>
+      </varlistentry>
+      <varlistentry>
+        <term>
+          <option>-h</option>
+        </term>
+        <term>
+          <option>-?</option>
+        </term>
+        <term>
+          <option>--help</option>
+        </term>
+        <listitem>
+          <para>Print a summary of all command line options and exit.</para>
+        </listitem>
+      </varlistentry>
+      <varlistentry>
+        <term>
+          <option>-i</option>
+          <replaceable>interval</replaceable>
+        </term>
+        <term>
+          <option>--interval</option>
+          <replaceable>interval</replaceable>
+        </term>
+        <listitem>
+          <para>Set the interval in seconds between checks for updates.
+          The default is one day.</para>
+        </listitem>
+      </varlistentry>
+      <varlistentry>
+        <term>
+          <option>-v</option>
+        </term>
+        <term>
+          <option>--version</option>
+        </term>
+        <listitem>
+          <para>Print the version number and exit.</para>
+        </listitem>
+      </varlistentry>
+    </variablelist>
+  </refsect1>
+  <refsect1>
+    <title>Exit Status</title>
+    <para>The following exit values are returned:</para>
+    <variablelist>
+      <varlistentry>
+        <term>0</term>
+        <listitem>
+          <para>Command successfully executed.</para>
+        </listitem>
+      </varlistentry>
+      <varlistentry>
+        <term>&gt; 0</term>
+        <listitem>
+          <para>An error has occured.</para>
+        </listitem>
+      </varlistentry>
+    </variablelist>
+  </refsect1>
+</refentry>
