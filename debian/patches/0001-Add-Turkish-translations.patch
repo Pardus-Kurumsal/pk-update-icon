@@ -1,0 +1,152 @@
+From: =?utf-8?q?Yunusemre_=C5=9Eent=C3=BCrk?=
+ <yunusemre.senturk@pardus.org.tr>
+Date: Tue, 19 Sep 2017 09:07:14 +0300
+Subject: Add Turkish translations
+
+---
+ po/tr.po | 136 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 136 insertions(+)
+ create mode 100755 po/tr.po
+
+diff --git a/po/tr.po b/po/tr.po
+new file mode 100755
+index 0000000..8df29e0
+--- /dev/null
++++ b/po/tr.po
+@@ -0,0 +1,136 @@
++# pk-update-icon
++# Copyright (C) 2011 Pavol Rusnak, Guido Berhoerster
++# This file is distributed under the same license as the pk-update-icon package.
++# Guido Berhoerster <guido@berhoerster.name>, 2015.
++# Yunusemre Şentürk <yunusemre.senturk@pardus.org.tr>, 2017.
++#
++msgid ""
++msgstr ""
++"Project-Id-Version: pk-update-icon 0.1\n"
++"Report-Msgid-Bugs-To: \n"
++"POT-Creation-Date: 2015-06-18 22:51:12+0200\n"
++"PO-Revision-Date: 2017-09-18 21:15+0300\n"
++"Last-Translator: Yunusemre Şentürk <yunusemre.senturk@pardus.org.tr>\n"
++"Language-Team: Türkçe <>\n"
++"Language: tr\n"
++"MIME-Version: 1.0\n"
++"Content-Type: text/plain; charset=UTF-8\n"
++"Content-Transfer-Encoding: 8bit\n"
++"Plural-Forms: nplurals=1; plural=0;\n"
++"X-Generator: Gtranslator 2.91.7\n"
++
++#: ../main.c:42
++msgid "Command for starting the software update viewer"
++msgstr "Yazılım güncelleme görüntüleyiciyi başlatma komutu"
++
++#: ../main.c:45
++msgid "Set the delay in seconds before the first check for updates"
++msgstr ""
++"Güncellemeler için ilk denetlemeden önce gecikmeyi saniye olarak ayarla"
++
++#: ../main.c:48
++msgid "Set the interval in seconds between checks for updates"
++msgstr "Güncelleme denetimleri arasında geçen süreyi saniye olarak ayarla"
++
++#: ../main.c:51
++msgid "Print the version number and exit"
++msgstr "Sürüm numarasını göster ve çık"
++
++#: ../main.c:63
++msgid "- display notifications about software updates"
++msgstr "- yazılım güncellemeleri ile ilgili bildirimleri görüntüle"
++
++#: ../pkui-icon.c:94
++msgid "Software Updates"
++msgstr "Yazılım Güncellemesi"
++
++#: ../pkui-icon.c:168
++msgid "translators"
++msgstr "Yunusemre Şentürk <yunusemre.senturk@pardus.org.tr>"
++
++#: ../pkui-icon.c:196
++msgid "_Check for Updates"
++msgstr "Güncellemeleri _kontrol et"
++
++#: ../pkui-icon.c:204
++msgid "_About"
++msgstr "_Hakkında"
++
++#. TRANSLATORS: This is a message without number mentioned
++#: ../pkui-icon.c:247
++msgid "Important Software Update"
++msgid_plural "Important Software Updates"
++msgstr[0] "Önemli Yazılım Güncellemesi"
++msgstr[1] "Wichtige Aktualisierungen"
++
++#. TRANSLATORS: This is a message without number mentioned
++#: ../pkui-icon.c:250
++msgid "Software Update"
++msgid_plural "Software Updates"
++msgstr[0] "Yazılım Güncellemesi"
++msgstr[1] "Softwareaktualisierungen"
++
++#.
++#. * TRANSLATORS: This sentence contains two plurals.
++#. * Texts related to these plurals are mixed. That is
++#. * why it is split in three parts. Fill first two parts
++#. * as you need, and use them as %s in the last one to
++#. * construct a sentence. Note that if the first form of
++#. * plural relates only to singular form, it is never
++#. * used, and dedicated shorter sentences are used.
++#: ../pkui-icon.c:266
++#, c-format
++msgid "There is %d software update available,"
++msgid_plural "There are %d software updates available,"
++msgstr[0] "%d paket güncellemesi mevcut."
++msgstr[1] "Es sind %d Softwareaktualisierungen verfügbar,"
++
++#.
++#. * TRANSLATORS: This is the sentence part in the
++#. * middle, form of which is related to the first
++#. * number. If your language does not need it, simply
++#. * use it as space or so.
++#: ../pkui-icon.c:275
++msgid "of it"
++msgid_plural "of them"
++msgstr[0] " "
++msgstr[1] "davon"
++
++#.
++#. * TRANSLATORS: This forms the sentence. If you need to
++#. * swap parts, use %3$s and %1$s etc. Plurals are
++#. * related to second number.
++#: ../pkui-icon.c:282
++#, c-format
++msgid "%s %d %s is important."
++msgid_plural "%s %d %s are important."
++msgstr[0] "Önemli %2$d , Toplam %1$s %3$s"
++msgstr[1] "%1$s %3$s sind %2$d wichtig."
++
++#: ../pkui-icon.c:287
++#, c-format
++msgid "There is %d important software update available."
++msgid_plural "There are %d important software updates available."
++msgstr[0] "%d önemli yazılım güncellemesi mevcut."
++msgstr[1] "Es sind %d wichtige Softwareaktualisierungen verfügbar."
++
++#: ../pkui-icon.c:294
++#, c-format
++msgid "There is %d software update available."
++msgid_plural "There are %d software updates available."
++msgstr[0] "%d paket güncellemesi mevcut."
++msgstr[1] "Es sind %d Softwareaktualisierungen verfügbar."
++
++#: ../pkui-icon.c:313
++msgid "Install Update"
++msgid_plural "Install Updates"
++msgstr[0] "Güncellemeyi Yükle"
++msgstr[1] "Aktualisierungen Installieren"
++
++#: ../pk-update-icon.desktop.in.h:1
++msgid "PackageKit Update Applet"
++msgstr "PackageKit Güncelleme Gereci"
++
++#: ../pk-update-icon.desktop.in.h:2
++msgid "Update Applet"
++msgstr "Güncelleme Gereci"

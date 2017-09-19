@@ -1,0 +1,22 @@
+From: =?utf-8?q?Yunusemre_=C5=9Eent=C3=BCrk?=
+ <yunusemre.senturk@pardus.org.tr>
+Date: Tue, 19 Sep 2017 09:07:41 +0300
+Subject: Fix prefix under Makefile for Pardus
+
+---
+ Makefile | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/Makefile b/Makefile
+index 42909ff..747bc3a 100644
+--- a/Makefile
++++ b/Makefile
+@@ -58,7 +58,7 @@ define generate-manpage-rule =
+ endef
+ 
+ DESTDIR ?=
+-prefix ?=	/usr/local
++prefix ?=	/usr
+ bindir ?=	$(prefix)/bin
+ datadir ?=	$(prefix)/share
+ mandir ?=	$(datadir)/man
